@@ -1,0 +1,36 @@
+.list-container {
+  display: flex;
+  justify-content: space-between; 
+  max-width: 800px;
+  margin: 40px auto;
+  font-family: 'Lato', sans-serif;
+  align-items: flex-start; 
+}
+
+ul {
+  list-style-type: disc; 
+  padding-left: 20px;
+  margin: 0;
+  flex: 1;
+  margin-right: 40px; 
+}
+
+li {
+  margin-bottom: 10px; 
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold; 
+  text-align: left; 
+  color: #2C2C2C;
+}
+
+@media (max-width: 768px) {
+  .list-container {
+    flex-direction: column;
+  }
+
+  ul {
+    margin-right: 0;
+    max-width: 100%;
+  }
+}

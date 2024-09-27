@@ -1,0 +1,45 @@
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  margin: 20px;
+  text-align: center;
+}
+
+.book-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.book-info {
+  margin-top: 10px;
+}
+
+.book-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #2C2C2C;
+}
+
+.book-author {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: #6C757D;
+}
+
+@media (max-width: 768px) {
+.book-card {
+  width: 250px; 
+}
+
+.book-title {
+  font-size: 18px;
+}
+
+.book-author {
+  font-size: 16px;
+}
+}

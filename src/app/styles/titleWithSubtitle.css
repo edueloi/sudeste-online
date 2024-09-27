@@ -1,0 +1,35 @@
+.title-subtitle-container {
+  margin-bottom: 20px;
+  max-width: 800px;
+  text-align: var(--align, left);
+}
+
+.title {
+  font-family: 'Lato', sans-serif;
+  font-size: 28px; 
+  font-weight: 800; 
+  color: #2C2C2C; 
+  margin-bottom: 10px; 
+}
+
+.subtitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #4A4A4A; 
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .title-subtitle-container {
+    padding: 0 20px;
+  }
+
+  .title {
+    font-size: 24px; 
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+}

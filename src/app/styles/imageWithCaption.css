@@ -1,0 +1,45 @@
+.image-caption-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+  }
+  
+  .image-rounded {
+    width: 100%;
+    height: auto;
+    border-radius: 20px; 
+  }
+  
+  .caption-text {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .caption-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .caption-source {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  @media (max-width: 768px) {
+    .image-caption-container {
+      padding: 0 15px; 
+    }
+  
+    .caption-title {
+      font-size: 14px;
+    }
+  
+    .caption-source {
+      font-size: 12px;
+    }
+  }
+  

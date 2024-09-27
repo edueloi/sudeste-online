@@ -1,0 +1,96 @@
+.tags-share-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.tags-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tags-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #6c757d;
+  margin-right: 10px;
+}
+
+.tag-item {
+  background-color: #e9ecef;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #212529;
+}
+
+.share-icons {
+  display: flex;
+  gap: 18px;
+  justify-content: flex-end;
+}
+
+.share-icon {
+  font-size: 22px;
+  color: #212529;
+  cursor: pointer;
+}
+
+.share-icon:hover {
+  color: #007bff;
+}
+
+.likes-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 15px;
+  border: 1px solid #212529;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.like-icon {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .tags-share-container {
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 20px; 
+  }
+
+  .share-icons {
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+  .likes-button {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .tag-item {
+    font-size: 10px;
+    padding: 6px 12px;
+  }
+
+  .share-icon {
+    font-size: 18px;
+  }
+
+  .likes-button {
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+}
