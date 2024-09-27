@@ -1,72 +1,37 @@
-# Getting Started with Create React App
+# Design Better. Faster. Together.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto de uma página web criada utilizando **React**, que apresenta artigos, listas e componentes altamente **dinâmicos** e **reutilizáveis**. O foco principal do projeto é oferecer uma interface visualmente atraente e **responsiva** para exibir informações sobre design de produtos digitais. A arquitetura do projeto foi planejada para ser **modular** e **completamente componentizada**, facilitando a manutenção e escalabilidade do código.
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+- **Componentes Dinâmicos**: Cada seção da página é construída com componentes reutilizáveis que se adaptam facilmente a diferentes dados e contextos.
+- **Interface Responsiva**: A interface é completamente responsiva, ajustando o layout e os tamanhos dos componentes com base no tamanho da tela.
+- **Customização Simples**: A estrutura modular do projeto permite que novos componentes sejam facilmente adicionados e existentes sejam modificados ou estendidos.
+- **Componentes de Layout Flexível**: Os componentes são estilizados de maneira flexível, podendo exibir conteúdos de maneira horizontal, vertical ou centralizada, dependendo do contexto.
+- **Facilidade de Uso**: A arquitetura foi projetada para que desenvolvedores possam modificar o conteúdo de maneira simples e rápida, sem precisar alterar a estrutura principal do código.
 
-### `npm start`
+## Estrutura do Projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Aqui está uma visão geral da estrutura do projeto, mostrando como os componentes e estilos estão organizados:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+/src /app /components # Contém todos os componentes reutilizáveis ArticleCard.js # Componente de cartão de artigo dinâmico ArticleCardList.js # Lista de cartões de artigos ArticleInfo.js # Exibe informações sobre o artigo (categoria, tempo de leitura, etc.) BookCard.js # Cartão de livros BookList.js # Lista de livros Header.js # Cabeçalho principal da página ImageWithCaption.js # Componente de imagem com legenda e fonte List.js # Lista reutilizável para exibição de itens Quote.js # Exibe citações estilizadas TagsAndShare.js # Exibe tags e opções de compartilhamento TextBlock.js # Bloco de texto reutilizável TitleWithSubtitle.js # Título com subtítulo dinâmico /pages # Páginas principais do projeto HomePage.js # Página principal que agrupa todos os componentes /styles # Arquivos de estilo CSS articleCard.css # Estilos específicos para o componente de cartão de artigos articleCardList.css # Estilos da lista de cartões de artigos articleInfo.css # Estilos para informações do artigo bookList.css # Estilos para a lista de livros header.css # Estilos para o cabeçalho homePage.css # Estilos gerais para a página inicial imageWithCaption.css # Estilos para o componente de imagem com legenda list.css # Estilos da lista genérica quote.css # Estilos para citações tagsAndShare.css # Estilos para o componente de tags e compartilhamento textBlock.css # Estilos para blocos de texto /assets # Arquivos de mídia (imagens, etc.) image_woman_header.jpg # Imagem para o cabeçalho image_print.png # Imagem usada no componente ImageWithCaption
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Componentização
 
-### `npm run build`
+O projeto segue o princípio de **componentização** do React, onde cada parte da interface é dividida em componentes independentes e reutilizáveis. Isso permite que os componentes sejam usados em diferentes partes da aplicação com facilidade. Por exemplo:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- O **componente `ArticleCard`** exibe informações de artigos de forma dinâmica, aceitando propriedades (props) para mudar o título, descrição, data, e outras informações.
+- O **componente `List`** é genérico e pode ser utilizado para exibir listas de itens, independentemente do conteúdo.
+- O **componente `Header`** é completamente personalizável, permitindo a troca de imagens, textos e estilos de maneira simples.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Customização
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+O projeto foi pensado para ser **customizado facilmente**. Desenvolvedores podem adicionar novos componentes ou modificar os existentes sem alterar a base do projeto, o que facilita a extensão de funcionalidades.
 
-### `npm run eject`
+## Tecnologias Utilizadas
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# sudeste-online" 
-"# sudeste-online" 
+- **React**: Biblioteca JavaScript para a construção de interfaces de usuário.
+- **CSS**/SCSS: Usado para estilização responsiva dos componentes.
+- **PropTypes**: Para validação de props nos componentes React.
+- **React Icons**: Para inclusão de ícones estilizados nos componentes.
